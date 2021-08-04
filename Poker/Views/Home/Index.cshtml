@@ -1,0 +1,36 @@
+﻿<!--
+  Author:    Ajay Bagali, Jon England, Ryan Furukawa
+  Date:      12/7/2020
+  Course:    CS 4540, University of Utah, School of Computing
+  Copyright: CS 4540 and Ajay Bagali, Jon England, and  Ryan Furukawa - This work may not be copied for use in Academic Coursework.
+  I, Ajay Bagali,Jon England, and Ryan Furukawa  certify that I wrote this code from scratch and did not copy it in part or whole from
+  another source.  Any references used in the completion of the assignment are cited in my README file.
+  File Contents
+    poker home page
+-->
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body class="background">
+    <div class="jumbotron" style="background-color:darkred;">
+        <h1 class="display-4" style="color:white;">Welcome to Poker!</h1>
+        <p class="lead" style="color:white;">Casual Poker Game</p>
+    </div>
+
+    <div class="input-group">
+        <div class="input-group-prepend">
+            <a class="btn btn-outline-secondary" style="background-color: darkgreen; color:white;" asp-controller="Games" asp-action="Create" role="button">Start Game</a>
+        </div>
+        <div class="input-group-append">
+            <span class="input-group-text">OR</span>
+        </div>
+        <div class="input-group-append">
+            <a class="btn btn-outline-secondary" style="background-color: darkred; color:white;" type="button" id="joinbox">Join Game</a>
+        </div>
+        <input class="form-control" type="text" id="gameIdInput" style="width: 50px" placeholder="15">
+    </div>
+
+</body>
+
+<script type="text/javascript" src="~/js/site.js"></script>
